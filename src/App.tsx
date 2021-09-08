@@ -11,7 +11,7 @@ function App() {
     <div className="bg-gray-800 text-white font-mono min-h-screen flex flex-col justify-center items-center">
       <div className="bg-gray-600 rounded-lg divide-y">
         <div className="relative flex flex-col gap-1 py-4 px-8">
-          <div className="absolute top-4 right-8 py-0.5 px-4 rounded-sm bg-yellow-500 text-xs">
+          <div id="mode" className="absolute top-4 right-8 py-0.5 px-4 rounded-sm bg-yellow-500 text-xs">
             {mode === "tiebreakers" ? "tiebreakers" : ""}
           </div>
           <PlayerMatchScoreBoard

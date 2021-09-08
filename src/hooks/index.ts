@@ -116,7 +116,6 @@ export const useScoreBoard = () => {
   };
 
   useEffect(() => {
-    console.log("useeffect set");
     if (hasSetWinner(setScores[currentSet])) {
       const setWinner = checkSetHighestScore();
       setMatchScore((matchScore) => ({ ...matchScore, [setWinner]: matchScore[setWinner] + 1 }));
@@ -125,7 +124,6 @@ export const useScoreBoard = () => {
   }, [setScores]);
 
   useEffect(() => {
-    console.log("useeffect game");
     if (mode === "tiebreakers" && hasTiebreakerWinner(gameScores)) {
       const setWinner = checkGameHighestScore();
       incrementCurrentSetScore(setWinner);
