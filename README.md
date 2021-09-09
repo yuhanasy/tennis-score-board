@@ -17,7 +17,7 @@ This app is built with: typescript, vite, react.js, tailwindcss, and cypress.
 yarn
 ```
 
-- run to your `http://localhost:3001`
+- run to your `http://localhost:3000`
 
 ```
 yarn dev
