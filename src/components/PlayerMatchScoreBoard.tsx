@@ -19,7 +19,7 @@ const PlayerMatchScoreBoard = ({ player, name, setScores, currentSet, matchScore
         {setScores.map((setScore, idx) => {
           const className = `w-8 h-8 grid place-items-center font-semibold ${idx === currentSet ? "rounded-sm border" : ""}`;
           return (
-            <div id={`player-${player}-set-${currentSet}`} className={className} key={idx}>
+            <div id={`player-${player}-set-${idx}`} className={className} key={idx}>
               {setScore[player]}
             </div>
           );
